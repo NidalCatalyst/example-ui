@@ -1,6 +1,6 @@
 {
   "name": "nidal-catalyst-example-ui",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -12,7 +12,10 @@
       "import": "./dist/example-ui.js",
       "require": "./dist/example-ui.umd.cjs"
     },
-    "./style.css": "./dist/style.css"
+    "./dist/style.css": {
+      "import": "./dist/style.css",
+      "require": "./dist/style.css"
+    }
   },
   "scripts": {
     "dev": "vite",
